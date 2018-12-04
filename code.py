@@ -88,7 +88,7 @@ for i in range(x):
 wordsSpent = ['']
 count = len(wordsSpent)
 vencedor = []
-venceu: int = 0
+venceu = 0
 l = 0
 erro = 0
 contador = 0
