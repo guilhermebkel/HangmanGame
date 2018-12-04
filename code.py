@@ -1,5 +1,4 @@
 import os
-import getpass
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
