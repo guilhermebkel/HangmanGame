@@ -57,7 +57,7 @@ def imprimeJogo():
     print(linha8[k])
     print('')
 
-# I have to find some way to hide the word typed
+# Word target selection
 palavra = input("-> Please type the game word target: ")
 palavra = palavra.upper()
 o = len(palavra)
