@@ -24,7 +24,7 @@ def imprimeJogo():
     linha8 = ['_', '_', '_', '|', '_', '_', '_', ' ', '  ']
     for k in range (n_colunas):
         print(linha1[k], end='')
-        k = k+1
+        k = k + 1
     print(linha1[k])
     for k in range (n_colunas):
         print(linha2[k], end='')
@@ -69,7 +69,6 @@ dica = dica.upper()
 tentativa = []
 for v in range(o):
     tentativa.extend('_')
-    v = v + 1
 
 # Player's selection menu
 players = input("-> Please type the total amount of players: ")
@@ -79,7 +78,7 @@ for i in range(x):
         print('Player', (i+1), ': ', end='')
         player.extend([input()])
         player[i] = player[i].upper()
-        i = i+1
+        i = i + 1
         if i == x:
                     print('\nLets get started!')
                     import time
@@ -109,7 +108,6 @@ def andamentoJogo(l):
     # Print the hidden boxes spaces on screen of Word Target
     for v in range(o):
         print(tentativa[v], ' ', end='')
-        v = v + 1
     print('')
 
     # Session Tip
@@ -120,7 +118,6 @@ def andamentoJogo(l):
     count = len(wordsSpent)
     for i in range(count):
         print(wordsSpent[i],'', end='')
-        i = i + 1
 
     print("\n- Try some letter: ", end='')
     wordsSpent.extend([input()])
@@ -128,15 +125,12 @@ def andamentoJogo(l):
     # Turns all the letters typed in upper type just to eliminate some bugs
     for i in range(count):
         wordsSpent[i] = wordsSpent[i].upper()
-        i = i + 1
 
     # This checks if the player typed the correct word
     for i in range (count):
         for j in range (o):
             if wordsSpent[i] == palavra[j]:
                 tentativa[j] = wordsSpent[i]
-            j = j + 1
-        i = i + 1
 
     # This takes off the stick body part
     erro = 0
@@ -146,7 +140,6 @@ def andamentoJogo(l):
             if erro == o:
                 p[contador] = ' '
                 contador = contador + 1
-            i = i + 1
 
     # This tries out if the player lost the game
     teste = 0
@@ -164,7 +157,6 @@ def andamentoJogo(l):
             if teste == o:
                 venceu = 1
                 return venceu
-        i = i + 1
 
 # The looping function that circles the game working
 while venceu == 0:
